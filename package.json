@@ -44,5 +44,11 @@
   },
   "dependencies": {
     "@jswork/next-content-type": "^1.0.2"
-  }
+  },
+  "keywords": [
+    "next",
+    "fetch",
+    "middleware",
+    "content-type"
+  ]
 }
