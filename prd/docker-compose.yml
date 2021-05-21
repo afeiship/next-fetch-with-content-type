@@ -1,9 +1,0 @@
-version: "3"
-services:
-    webpack-vue-multipage:
-      image: nginx
-      volumes:
-        - ./conf.d:/etc/nginx/conf.d
-        - ../../dist:/www
-      ports:
-        - "9082:80"
