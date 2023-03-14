@@ -1,5 +1,5 @@
-# next-fetch-with-content-type
-> Request middleware for contentType.
+# weibo2res
+> Get weibo response.
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -7,33 +7,39 @@
 [![download][download-image]][download-url]
 
 ## installation
-```bash
-npm install -S @jswork/next-fetch-with-content-type
+```shell
+npm install @jswork/weibo2res
 ```
 
 ## usage
 ```js
-import '@jswork/next-fetch-with-content-type';
-
-const betterFetch = nx.fetchWithContentType(fetch);
-betterFetch('https://api.github.com/users/afeiship', { contentType: 'urlencoded' }).then(
-  (res) => {
-    // console.log(res);
-  }
-);
+import weibo2res from '@jswork/weibo2res';
+const res = weibo2res(...);
+/*
+// success
+{
+  code: 'A00006',
+  width: 1504,
+  size: 161645,
+  ret: 1,
+  height: 400,
+  name: 'pic_1',
+  pid: 'da432263gy1hbzptofvp4j215s0b4tct',
+}
+*/
 ```
 
 ## license
-Code released under [the MIT license](https://github.com/afeiship/next-fetch-with-content-type/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/weibo2res/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@jswork/next-fetch-with-content-type
-[version-url]: https://npmjs.org/package/@jswork/next-fetch-with-content-type
+[version-image]: https://img.shields.io/npm/v/@jswork/weibo2res
+[version-url]: https://npmjs.org/package/@jswork/weibo2res
 
-[license-image]: https://img.shields.io/npm/l/@jswork/next-fetch-with-content-type
-[license-url]: https://github.com/afeiship/next-fetch-with-content-type/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@jswork/weibo2res
+[license-url]: https://github.com/afeiship/weibo2res/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-fetch-with-content-type
-[size-url]: https://github.com/afeiship/next-fetch-with-content-type/blob/master/dist/next-fetch-with-content-type.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/weibo2res
+[size-url]: https://github.com/afeiship/weibo2res/blob/master/dist/weibo2res.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@jswork/next-fetch-with-content-type
-[download-url]: https://www.npmjs.com/package/@jswork/next-fetch-with-content-type
+[download-image]: https://img.shields.io/npm/dm/@jswork/weibo2res
+[download-url]: https://www.npmjs.com/package/@jswork/weibo2res
