@@ -6,8 +6,11 @@ describe('api.basic', () => {
     <script type="text/javascript">document.domain="sina.com.cn";</script>
 {"code":"A00006","data":{"count":1,"data":"eyJ1aWQiOjM2NjE4MzI4MDMsImFwcCI6Im1pbmlibG9nIiwiY291bnQiOjEsInRpbWUiOjE2Nzg4MDY2MjQuODgsInBpY3MiOnsicGljXzEiOnsid2lkdGgiOjE1MDQsInNpemUiOjE2MTY0NSwicmV0IjoxLCJoZWlnaHQiOjQwMCwibmFtZSI6InBpY18xIiwicGlkIjoiZGE0MzIyNjNneTFoYnpzamIxcnVnajIxNXMwYjR0Y3QifX19","pics":{"pic_1":{"width":1504,"size":161645,"ret":1,"height":400,"name":"pic_1","pid":"da432263gy1hbzsjb1rugj215s0b4tct"}}}}`;
     const res = weibo2res(input);
+    console.log('res:', res);
+
     expect(res).toEqual({
       code: 'A00006',
+      format: 'jpg',
       width: 1504,
       size: 161645,
       ret: 1,
