@@ -1,6 +1,6 @@
 {
   "name": "@jswork/weibo2res",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get weibo response.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
