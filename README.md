@@ -19,6 +19,7 @@ const res = weibo2res(...);
 // success
 {
   code: 'A00006',
+  format: 'jpg',
   width: 1504,
   size: 161645,
   ret: 1,
